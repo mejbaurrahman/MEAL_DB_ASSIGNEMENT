@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <header>
+      <!--navbar part-->
+      <section class="container mx-auto px-8 bg-primary-content navbar-section">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="">
+                  <a class="btn">Button</a>
+                </li>
+
+                <li class="">
+                  <a class="btn">Button</a>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 mx-3">
+              <li class="px-3">
+                <a class="btn">Button</a>
+              </li>
+
+              <li class="px-3">
+                <a class="btn">Button</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--banner part-->
+      <section class="banner-section">
+        <div class="carousel w-full z-0">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/p2.jpg" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="absolute left-1/2 right-1/2 top-1/2 flex justify-center gap-2 py-2 -mt-36 z-10 rounded-lg"
+            >
+              <p
+                class="text-center text-3xl bg-primary-content opacity-50 p-10"
+              >
+                The food was awesome
+              </p>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/p-1 (1).jpg" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/p-1 (2).jpg" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/p-1 (3).jpg" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!--Food Category and display-->
+      <section class="category-section container mx-auto p-5">
+        <div>
+          <div>
+            <h5>Food Category</h5>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-2">
+            <div class="p-2">
+              <div
+                class="card bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              >
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Faq-->
+      <section class="faq-section container mx-auto p-5">
+        <!-- component -->
+        <div class="">
+          <h1
+            class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold"
+          >
+            FAQ's
+          </h1>
+
+          <div class="lg:w-8/12 w-full mx-auto">
+            <!-- Question 1 -->
+            <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+            <div class="w-full md:px-6">
+              <div
+                id="mainHeading"
+                class="flex justify-between items-center w-full"
+              >
+                <div class="">
+                  <p
+                    class="flex justify-center items-center dark:text-white font-medium text-base leading-6 md:leading-4 text-gray-800"
+                  >
+                    <span
+                      class="lg:mr-6 mr-4 dark:text-white lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800"
+                      >Q1.</span
+                    >
+                    How do i know if a product is available in boutiques?
+                  </p>
+                </div>
+                <button
+                  aria-label="toggler"
+                  class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  data-menu
+                >
+                  <img
+                    class="transform dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                    alt="toggler"
+                  />
+                  <img
+                    class="transform dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+              <div id="menu" class="hidden mt-6 w-full">
+                <p
+                  class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal"
+                >
+                  Remember you can query the status of your orders any time in
+                  My orders in the My account section. if you are not resigered
+                  at Mango.com, you can access dierectly in the Orders section.
+                  In this cause, you will have enter your e-mail address and
+                  order number.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+
+            <hr class="w-full lg:mt-10 my-8" />
+
+            <div class="w-full md:px-6">
+              <div
+                id="mainHeading"
+                class="flex justify-between items-center w-full"
+              >
+                <div class="">
+                  <p
+                    class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"
+                  >
+                    <span
+                      class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800"
+                      >Q2.</span
+                    >
+                    How can i find the prices or get other information about
+                    chanel products?
+                  </p>
+                </div>
+                <button
+                  aria-label="toggler"
+                  class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  data-menu
+                >
+                  <img
+                    class="transform dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                    alt="toggler"
+                  />
+                  <img
+                    class="transform dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+              <div id="menu" class="hidden mt-6 w-full">
+                <p
+                  class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal"
+                >
+                  Remember you can query the status of your orders any time in
+                  My orders in the My account section. if you are not resigered
+                  at Mango.com, you can access dierectly in the Orders section.
+                  In this cause, you will have enter your e-mail address and
+                  order number.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+
+            <hr class="w-full lg:mt-10 my-8" />
+
+            <div class="w-full md:px-6">
+              <div
+                id="mainHeading"
+                class="flex justify-between items-center w-full"
+              >
+                <div class="">
+                  <p
+                    class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"
+                  >
+                    <span
+                      class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800"
+                      >Q3.</span
+                    >How many collections come out every year?
+                  </p>
+                </div>
+                <button
+                  aria-label="toggler"
+                  class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  data-menu
+                >
+                  <img
+                    class="transform dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                    alt="toggler"
+                  />
+                  <img
+                    class="transform dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+              <div id="menu" class="hidden mt-6 w-full">
+                <p
+                  class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal"
+                >
+                  Remember you can query the status of your orders any time in
+                  My orders in the My account section. if you are not resigered
+                  at Mango.com, you can access dierectly in the Orders section.
+                  In this cause, you will have enter your e-mail address and
+                  order number.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+
+            <hr class="w-full lg:mt-10 my-8" />
+
+            <div class="w-full md:px-6">
+              <div
+                id="mainHeading"
+                class="flex justify-between items-center w-full"
+              >
+                <div class="">
+                  <p
+                    class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"
+                  >
+                    <span
+                      class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800"
+                      >Q4.</span
+                    >Are all of the fashion collections features on the website?
+                  </p>
+                </div>
+                <button
+                  aria-label="toggler"
+                  class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  data-menu
+                >
+                  <img
+                    class="transform dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                    alt="toggler"
+                  />
+                  <img
+                    class="transform dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+              <div id="menu" class="hidden mt-6 w-full">
+                <p
+                  class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal"
+                >
+                  Remember you can query the status of your orders any time in
+                  My orders in the My account section. if you are not resigered
+                  at Mango.com, you can access dierectly in the Orders section.
+                  In this cause, you will have enter your e-mail address and
+                  order number.
+                </p>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+
+            <hr class="w-full lg:mt-10 my-8" />
+
+            <div class="w-full md:px-6">
+              <div
+                id="mainHeading"
+                class="flex justify-between items-center w-full"
+              >
+                <div class="">
+                  <p
+                    class="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800"
+                  >
+                    <span
+                      class="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800"
+                      >Q5.</span
+                    >Where do i find products that i have seen in magazines or
+                    Social Media?
+                  </p>
+                </div>
+                <button
+                  aria-label="toggler"
+                  class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                  data-menu
+                >
+                  <img
+                    class="transform dark:hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                    alt="toggler"
+                  />
+                  <img
+                    class="transform dark:block hidden"
+                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                    alt="toggler"
+                  />
+                </button>
+              </div>
+              <div id="menu" class="hidden mt-6 w-full">
+                <p
+                  class="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal"
+                >
+                  Remember you can query the status of your orders any time in
+                  My orders in the My account section. if you are not resigered
+                  at Mango.com, you can access dierectly in the Orders section.
+                  In this cause, you will have enter your e-mail address and
+                  order number.
+                </p>
+              </div>
+            </div>
+
+            <hr class="w-full lg:mt-10 my-8" />
+          </div>
+        </div>
+
+        <script>
+          let elements = document.querySelectorAll("[data-menu]");
+          for (let i = 0; i < elements.length; i++) {
+            let main = elements[i];
+
+            main.addEventListener("click", function () {
+              let element = main.parentElement.parentElement;
+              let indicators = main.querySelectorAll("img");
+              let child = element.querySelector("#menu");
+              let h = element.querySelector("#mainHeading>div>p");
+
+              h.classList.toggle("font-semibold");
+              child.classList.toggle("hidden");
+              // console.log(indicators[0]);
+              indicators[0].classList.toggle("rotate-180");
+            });
+          }
+        </script>
+      </section>
+      <!--Testimonial Sections-->
+      <section class="testimonial-section container mx-auto p-5">
+        <!-- component -->
+        <h1
+          class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold mb-8"
+        >
+          Testimonial's
+        </h1>
+
+        <!-- component -->
+        <!-- This is an example component -->
+        <div class="w-8/12 mx-auto">
+          <div id="default-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div
+              class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+            >
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div
+                  class="relative flex w-full flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none"
+                >
+                  <div
+                    class="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80"
+                      alt="tania andrew"
+                      class="relative inline-block h-[58px] w-[58px] !rounded-full object-cover object-center"
+                    />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5
+                          class="block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"
+                        >
+                          Tania Andrew
+                        </h5>
+                        <div class="5 flex items-center gap-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="h-5 w-5 text-yellow-700"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="h-5 w-5 text-yellow-700"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="h-5 w-5 text-yellow-700"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="h-5 w-5 text-yellow-700"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            class="h-5 w-5 text-yellow-700"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <p
+                        class="block font-sans text-base font-light leading-relaxed text-blue-gray-900 antialiased"
+                      >
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="mb-6 p-0">
+                    <p
+                      class="block font-sans text-base font-light leading-relaxed text-inherit antialiased"
+                    >
+                      "I found solution to all my design needs from Creative
+                      Tim. I use them as a freelancer in my hobby projects for
+                      fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                  class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Slider indicators -->
+            <div
+              class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+            >
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 1"
+                data-carousel-slide-to="0"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 2"
+                data-carousel-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                class="w-3 h-3 rounded-full"
+                aria-current="false"
+                aria-label="Slide 3"
+                data-carousel-slide-to="2"
+              ></button>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary-content dark:bg-gray-800/30 group-hover:bg-primary dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+                <span class="hidden">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-primary-content dark:bg-gray-800/30 group-hover:bg-primary dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+                <span class="hidden">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- stylesheet -->
+      </section>
+    </main>
+
+    <footer>
+      <footer class="footer footer-center bg-primary-content text-black p-10">
+        <aside>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="inline-block fill-current"
+          >
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+            ></path>
+          </svg>
+          <p class="font-bold">
+            ACME Industries Ltd.
+            <br />
+            Providing reliable tech since 1992
+          </p>
+          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        </aside>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
