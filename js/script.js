@@ -21,12 +21,13 @@ const showData = (meals, text) => {
       meals?.forEach((meal) => {
         const card = document.createElement("div");
         card.classList.add("p-4");
+
         card.innerHTML = `
           <div
-                  class="card bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  class="card h-full bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   <figure>
-                    <img
+                    <img class=""
                       src=${meal.strMealThumb}
                       alt="Shoes"
                     />
@@ -53,9 +54,10 @@ const showData = (meals, text) => {
         console.log(meal);
         const card = document.createElement("div");
         card.classList.add("p-4");
+        card.classList.add("h-96");
         card.innerHTML = `
           <div
-                  class="card bg-base-100 shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  class="card bg-base-100 h-full shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   <figure>
                     <img
